@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@700&family=Poppins&family=Work+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins';
+    color: white;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 100px;
+    margin-top: 0px;
+    position: absolute;
+    height: 120px;
+    top: 48px;
+    left: 10vw;
+    background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(21px);
+    border-radius: 20px;
+    border: 1px solid;
+}
+
+.logo {
+    width: 140px;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+nav ul {
+    margin-right: 20px;
+    margin-top: -10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    position: relative;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgb(17, 4, 0) 90%, #411001);
+}
+
+.home .left-component {
+    width: 50%;
+    height: 100vh;
+}
+
+.home .left-component img {
+    width: 100%;
+    height: 100vh;
+}
+
+.home .right-component {
+    width: 50%;
+}
+
+h1 {
+    font-size: 5vw;
+    font-weight: 700;
+    margin-left: 62px;
+}
+
+.right-component h3 {
+    font-size: 2vw;
+    font-weight: 700;
+    margin-left: 70px;
+}
+
+.about h3 {
+    font-size: 2vw;
+    font-weight: 700;
+    margin-left: 70px;
+}
+
+span {
+    color: #F45725;
+}
+
+button {
+    position: absolute;
+    left: 80%;
+    top: 90vh;
+    font-size: 2.5vw;
+    font-weight: 700;
+    border: 0;
+    border-radius: 16px;
+    padding: 4px 16px 4px 16px;
+    background-color: #F45725;
+    color: white;
+}
+
+.about {
+    background: linear-gradient(to top, rgb(17, 4, 0) 70%, #411001);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.center-glass {
+    width: 51.02vw;
+    height: 32.7vw;
+    display: flex;
+}
+
+.rectangle {
+    width: 41.5vw;
+    height: 27.27vw;
+    border: 1px solid black;
+    border-radius: 16px;
+    background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(30px);
+    rotate: 82.07deg;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    height: 50vh;
+}
+
+.image img {
+    width: 17vw;
+    height: 23.5vw;
+    border-radius: 16px;
+}
+
+.image h3 {
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+.text {
+    display: inline-block;
+    margin-bottom: 250px;
+}
+
+.text h3 {
+    font-size: 2.11vw;
+    font-weight: 700;
+}
+
+.text p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.circle {
+    width: 14.8vw;
+    height: 14.8vw;
+    border-radius: 50%;
+    margin-top: 23.26vw;
+    background: radial-gradient(81.25% 81.25% at 67.32% 18.75%, #BCEEEB 0%, #5378D9 100%);
+}
