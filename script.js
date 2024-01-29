@@ -7,9 +7,6 @@ let dots = document.querySelectorAll('.dot');
 let next = document.querySelector('.next');
 let prev = document.querySelector('.prev');
 const landingPage = document.querySelector('.landing-page');
-const menubtn = document.querySelector('.menu');
-const menu = document.querySelector('nav ul');
-const closebtn = document.querySelector('.closebtn');
 
 
 
@@ -153,29 +150,20 @@ function switchImage(currentImage) {
 
 //Button functionality
 
-signInBtn.addEventListener('click', () => {
+signInBtn.addEventListener('click', (e) => {
+    e.preventDefault();
     signIn.classList.add('active');
     landingPage.classList.add('blur');
 })
 
-btn.addEventListener('click', () => {
+btn.addEventListener('click', (e) => {
+    e.preventDefault();
     signIn.classList.add('active');
     landingPage.classList.add('blur');
 })
 
-close.addEventListener('click', () => {
+close.addEventListener('click', (e) => {
+    e.preventDefault();
     signIn.classList.remove('active');
     landingPage.classList.remove('blur');
-})
-
-menubtn.addEventListener('click', () => {
-    menu.classList.add('active');
-    closebtn.classList.add('active');
-    menubtn.classList.remove('active');
-})
-
-closebtn.addEventListener('click', () => {
-    menu.classList.remove('active');
-    menubtn.classList.add('active');
-    closebtn.classList.remove('active');
 })

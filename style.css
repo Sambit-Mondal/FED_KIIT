@@ -240,7 +240,6 @@ span.user {
     background: linear-gradient(to top, rgb(17, 4, 0) 70%, #411001);
     display: flex;
     flex-direction: column;
-    min-height: 150vh;
     width: 100%;
     position: absolute;
 }
@@ -338,6 +337,7 @@ span.user {
 .footer {
     width: 100%;
     margin-top: 20vw;
+    background: linear-gradient(to top,  #411001, rgb(17, 4, 0) 70%);
 }
 
 .glass {
@@ -435,7 +435,7 @@ hr {
     left: 0;
     right: 0;
     margin: auto;
-    z-index: 1;
+    z-index: 101;
     border-radius: 1.5vw;
     transform: scale(0);
     transition: .2s ease-out;
@@ -599,7 +599,15 @@ hr {
 }
 
 
-@media only screen and (max-width: 870px) {
+
+
+
+
+
+/* CSS for Mobile devices */
+
+
+@media only screen and (max-width: 980px) {
     nav {
         height: 10vw;
     }
@@ -641,7 +649,7 @@ hr {
     }
 
     .home {
-        max-height: 50vh;
+        max-height: 60vh;
     }
 
     .home .left-component {
@@ -654,7 +662,7 @@ hr {
 
     h1 {
         font-size: 8vw;
-        margin-top: 60px;
+        margin-top: 20vw;
     }
 
     .home .right-component h3 {
@@ -663,13 +671,13 @@ hr {
 
     #button {
         left: 75%;
-        top: 80vw;
+        top: 50%;
     }
 
     .slider img {
-        object-fit: fill;
+        object-fit: cover;
         width: 100%;
-        height: 50vh;
+        height: 100vh;
     }
 
     .circle5,
@@ -796,8 +804,7 @@ hr {
     }
 
     .about {
-        min-height: 0vw;
-        max-height: 150vh;
+        min-height: 200vw;
     }
 
     .heading h1 {
@@ -890,5 +897,317 @@ hr {
     .copyright {
         margin-top: 3vw;
         font-size: 3vw;
+    }
+}
+
+
+
+
+
+/* CSS for Tablets */
+
+@media only screen and (min-width: 980px) and (max-width: 1300px) {
+    * {
+        font-size: 3vw;
+    }
+
+    nav {
+        height: 10vw;
+    }
+
+    .logo {
+        width: 23vw;
+    }
+
+    nav ul li a.icon {
+        font-size: 4vw;
+        display: block;
+    }
+
+    nav ul li a {
+        font-size: 2.5vw;
+    }
+
+    nav ul li ul.dropdown li {
+        display: block;
+    }
+
+    nav ul li ul.dropdown {
+        width: 100%;
+        background: #151515;
+        position: absolute;
+        width: 25vw;
+        top: 3vw;
+        left: 65%;
+        z-index: 1;
+        display: none;
+    }
+
+    nav ul li:hover ul.dropdown {
+        display: block;
+    }
+
+    span.user {
+        font-size: 2.5vw;
+    }
+
+    .home {
+        max-height: 50%;
+    }
+
+    .home .left-component {
+        height: 100%;
+    }
+
+    .home .right-component {
+        height: 100%;
+    }
+
+    h1 {
+        font-size: 8vw;
+        margin-top: 30vw;
+    }
+
+    .home .right-component h3 {
+        font-size: 3.3vw;
+    }
+
+    #button {
+        left: 75%;
+        top: 80vw;
+    }
+
+    .slider img {
+        object-fit: fill;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .circle5,
+    .circle6,
+    .circle7,
+    .circle8,
+    .circle9 {
+        width: 3vw;
+        height: 3vw;
+        bottom: 0vw;
+    }
+
+    .circle5 {
+        left: 8vw;
+    }
+
+    .circle6 {
+        left: 12vw;
+    }
+
+    .circle7 {
+        left: 16vw;
+    }
+
+    .circle8 {
+        left: 20vw;
+    }
+
+    .circle9 {
+        left: 24vw;
+    }
+
+    .contents img {
+        width: 30vw;
+    }
+
+    .circle1,
+    .circle2,
+    .circle3,
+    .circle4 {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .sign-in {
+        width: 70vw;
+        height: 90vw;
+    }
+
+    .sign-in i {
+        font-size: 6vw;
+    }
+
+    .sign-in-content .heading_txt {
+        font-size: 3vw;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .sign-in form input {
+        height: 5vw;
+        width: 40vw;
+        padding: auto;
+        padding-bottom: 0vw;
+        font-size: 2vw;
+        border-radius: 1.5vw;
+        margin-top: -10vw;
+        color: #000;
+        font-weight: 900;
+    }
+
+    .sign-in form .username {
+        margin-top: -20vw;
+    }
+
+    .sign-in form p {
+        margin-top: 0vw;
+        font-size: 1.5vw;
+        margin-left: 46%;
+    }
+
+    .sign-in form button[type=submit] {
+        width: 40vw;
+        height: 5vw;
+        font-size: 2vw;
+        border-radius: 1.5vw;
+    }
+
+    .sign-in-content .social_login {
+        margin-top: 30vw;
+    }
+
+    .social_login p {
+        font-size: 2vw;
+    }
+
+    .txt::before {
+        width: 10vw;
+        top: 1.3vw;
+        left: -11vw;
+    }
+
+    .txt::after {
+        width: 10vw;
+        top: 1.3vw;
+        right: -11vw;
+    }
+
+    .logos {
+        margin-top: 7vw;
+        gap: 5vw;
+    }
+
+    .logos .icon {
+        width: 10vw;
+        height: 5vw;
+    }
+
+    .logos .icon img {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    .about {
+        min-height: 200vh;
+    }
+
+    .heading h1 {
+        margin-top: 0vw;
+    }
+
+    .heading h3 {
+        font-size: 3.3vw;
+    }
+
+    .center-glass {
+        top: 50vw;
+        left: 5vw;
+    }
+
+    .rectangle {
+        width: 90vw;
+        height: 45vw;
+    }
+
+    .image img {
+        width: 25vw;
+        height: 37vw;
+    }
+
+    .text h3 {
+        font-size: 4vw;
+    }
+
+    .text p {
+        font-size: 2.5vw;
+    }
+
+    .circle-purple {
+        width: 20vw;
+        height: 20vw;
+        position: absolute;
+        right: -9vw;
+        top: 11vw;
+    }
+
+    .circle-blue {
+        width: 12vw;
+        height: 12vw;
+        margin-top: 15vw;
+        margin-left: 61vw;
+    }
+
+    .rectangle-small {
+        width: 20vw;
+        height: 30vw;
+        margin-top: -12vw;
+        margin-left: 68vw;
+    }
+
+    .circle-pink {
+        width: 24vw;
+        height: 24vw;
+        margin-top: -20vw;
+        margin-left: 75vw;
+    }
+
+    .circle-orange {
+        width: 22vw;
+        height: 22vw;
+        margin-left: 75vw;
+    }
+
+    .glass {
+        margin-top: -12vw;
+    }
+
+    .contents .tabs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .footer {
+        margin-top: 70vw;
+    }
+
+    .links {
+        flex-direction: row;
+        margin-top: 10vw;
+        margin-bottom: 10vw;
+    }
+
+    .copyright {
+        margin-top: 3vw;
+        font-size: 3vw;
+    }
+}
+
+
+/* CSS for large screens */
+
+@media only screen and (min-width: 1300px) {
+    .about {
+        max-height: 150vh;
     }
 }
