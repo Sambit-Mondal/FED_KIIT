@@ -1,4 +1,4 @@
-![image](https://github.com/Sambit-Mondal/FED_KIIT/assets/138088550/c41826c5-9bbd-4167-87c0-a058eb28abb2)![image](https://github.com/Sambit-Mondal/FED_KIIT/assets/138088550/7c8a8110-6649-419c-bf3e-3e69c468131e)# <h1>FED_KIIT</h1>
+# <h1>FED_KIIT</h1>
 
 <div>
   <h2>Navbar :-</h2>
