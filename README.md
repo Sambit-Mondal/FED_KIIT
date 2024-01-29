@@ -137,5 +137,7 @@
       <ul>
         <li><h4>The navigation tabs change their color to orange as we hover across them. (This is applicable in both navbar and footer).</h4></li>
         <li><h4>The ENROLL/EXPLORE button change the background color to white and text color to orangle as we hover across them.</h4></li>
+      </ul>
+    <li><h3>The website is completely responsive for mobile devices.</h3></li>
   </ul>
 </div>
