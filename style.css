@@ -72,10 +72,15 @@ nav ul li a {
     color: white;
     font-size: 1.23vw;
     position: relative;
+    transition: 0.3s ease;
 }
 
 nav ul li a.icon {
     display: none;
+}
+
+nav ul li a:hover {
+    color: #F45725;
 }
 
 .home {
@@ -107,7 +112,6 @@ nav ul li a.icon {
     bottom: 1.25rem;
     bottom: 4vw;
     left: 4vw;
-    transform: translateX(-50%);
     z-index: 1;
 }
 
@@ -216,6 +220,12 @@ span.user {
     padding: 4px 16px 4px 16px;
     background-color: #F45725;
     color: white;
+    transition: 0.3s ease;
+}
+
+#button:hover {
+    color: #F45725;
+    background-color: white;
 }
 
 .heading {
@@ -378,6 +388,11 @@ span.user {
 .contents .tabs a {
     margin-left: 1.5vw;
     margin-right: 1.5vw;
+    transition: 0.3s ease;
+}
+
+.contents .tabs a:hover {
+    color: #F45725;
 }
 
 .links {
@@ -649,20 +664,20 @@ hr {
     }
 
     .home {
-        max-height: 60vh;
+        max-height: 50vh;
     }
 
     .home .left-component {
-        height: 100%;
+        height: 100vh;
     }
 
     .home .right-component {
-        height: 100%;
+        height: 100vh;
     }
 
     h1 {
         font-size: 8vw;
-        margin-top: 20vw;
+        margin-top: 13vw;
     }
 
     .home .right-component h3 {
@@ -671,13 +686,13 @@ hr {
 
     #button {
         left: 75%;
-        top: 50%;
+        top: 40vh;
     }
 
     .slider img {
-        object-fit: cover;
+        object-fit: fill;
         width: 100%;
-        height: 100vh;
+        height: 50vh;
     }
 
     .circle5,
@@ -899,7 +914,6 @@ hr {
         font-size: 3vw;
     }
 }
-
 
 
 
