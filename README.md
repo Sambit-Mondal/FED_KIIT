@@ -120,7 +120,7 @@
   <ul>
     <li><h3>Navbar : Changed the Sign In option to the username (Sambit).</h3></li>
     <li><h3>Home : Changed the 'ENROLL' button to 'EXPLORE'.</h3></li>
-    <img src = "Log-in.png">
+    <img src = "/Screenshots/Log-in.png">
   </ul>
 </div>
 
