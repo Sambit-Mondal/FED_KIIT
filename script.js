@@ -1,12 +1,13 @@
-const signInBtn = document.querySelector('.sign-in-btn');
-const btn = document.querySelector('.btn');
-const signIn = document.querySelector('.sign-in');
-const close = document.querySelector('.close');
-let slideImages = document.querySelectorAll('.img');
-let dots = document.querySelectorAll('.dot');
-let next = document.querySelector('.next');
-let prev = document.querySelector('.prev');
-const landingPage = document.querySelector('.landing-page');
+var signInBtn = document.querySelector('.sign-in-btn');
+var btn = document.querySelector('.btn');
+var signIn = document.querySelector('.sign-in');
+var close = document.querySelector('.close');
+var submit = document.querySelector('span.submit');
+var slideImages = document.querySelectorAll('.img');
+var dots = document.querySelectorAll('.dot');
+var next = document.querySelector('.next');
+var prev = document.querySelector('.prev');
+var landingPage = document.querySelector('.landing-page');
 
 
 
@@ -15,13 +16,12 @@ const landingPage = document.querySelector('.landing-page');
 
 const form = document.querySelector("form");
 
-form.addEventListener("submit", (e) => {
-    e.preventDefault()
+submit.addEventListener("click", () => {
 
-    const username = form.username.value
-    const password = form.password.value
+    const username = form.username.value;
+    const password = form.password.value;
 
-    const authenticated = authentication(username, password)
+    const authenticated = authentication(username, password);
 
     if (authenticated) {
         window.location.href = "login-page.html";
@@ -89,28 +89,15 @@ function slidePrev() {
 //Autosliding functionality
 
 function autoSliding() {
-    deletInterval = setInterval(timer, 3000);
+    deletInterval = setInterval(timer, 2500);
     function timer() {
         slideNext();
         indicators();
+
     }
 }
 autoSliding();
 
-
-
-//Mouseover functionality
-
-const container = document.querySelector('.left-component');
-container.addEventListener('mouseover', function () {
-    clearInterval(deletInterval);
-});
-
-
-
-//Mouseout functionality
-
-container.addEventListener('mouseout', autoSliding);
 
 
 //Function indicators
@@ -121,31 +108,6 @@ function indicators() {
     }
     dots[counter].className += ' active';
 }
-
-
-//Function switchimage
-
-function switchImage(currentImage) {
-    currentImage.classList.add('active');
-    var imageId = currentImage.getAttribute('attr');
-    if (imageId > counter) {
-        slideImages[counter].style.animation = 'next1 0.5s ease-in forwards';
-        counter = imageId;
-        slideImages[counter].style.animation = 'next2 0.5s ease-in forwards';
-    }
-    else if (imageId == counter) {
-        return;
-    }
-    else {
-        slideImages[counter].style.animation = 'prev1 0.5s ease-in forwards';
-        counter = imageId;
-        slideImages[counter].style.animation = 'prev2 0.5s ease-in forwards';
-    }
-    indicators();
-}
-
-
-
 
 
 //Button functionality

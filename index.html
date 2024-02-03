@@ -10,7 +10,7 @@
     <title>FED - Landing Page</title>
 </head>
 
-<body>
+<body class="body">
 
 
     <!-------------------------------------------------------------- Sign In form ------------------------------------------------------------------------->
@@ -24,12 +24,12 @@
                 <h3>Welcome Back</h3>
             </div>
             <form>
-                <label for="Username" class="username"><input type="text" name="username"
-                        placeholder="Enter Username" required></label>
+                <label for="Username" class="username"><input type="text" name="username" placeholder="Enter Username"
+                        required></label>
                 <label for="Password" class="password"><input type="password" name="password"
                         placeholder="Enter Password" required></label>
                 <p>Forgot Password?</p>
-                <button type="submit" name="submit">Sign In</button>
+                <span class="submit">Sign In</span>
             </form>
             <div class="social_login">
                 <p class="txt">Or Continue With</p>
@@ -71,11 +71,11 @@
         <div id="home" class="home">
             <div class="left-component">
                 <div class="slider fade">
-                    <img class="img active" src="Images/image-1.png">
+                    <img class="img active" src="Images/image-0.png">
+                    <img class="img" src="/Images/image-1.png">
                     <img class="img" src="/Images/image-2.png">
                     <img class="img" src="/Images/image-3.png">
                     <img class="img" src="/Images/image-4.png">
-                    <img class="img" src="/Images/image-5.png">
                 </div>
                 <div class="buttons">
                     <span class="next">&#10095;</span>
@@ -84,7 +84,7 @@
                 <div class="slider-nav">
                     <div class="dot circle5 active" attr="0" onclick="switchImage(this)"></div>
                     <div class="dot circle6" attr="1" onclick="switchImage(this)"></div>
-                    <div class="dot circle7" attr="2" onclick="switchImage(this)"></div>
+                    <div class="dot circle7" attr="2" onclick="switchIsmage(this)"></div>
                     <div class="dot circle8" attr="3" onclick="switchImage(this)"></div>
                     <div class="dot circle9" attr="4" onclick="switchImage(this)"></div>
                 </div>

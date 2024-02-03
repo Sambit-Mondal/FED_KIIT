@@ -8,6 +8,7 @@
     text-decoration: none;
     font-family: 'Poppins';
     color: white;
+    transition: 0.3s ease;
 }
 
 html {
@@ -162,7 +163,7 @@ nav ul li a:hover {
 }
 
 .buttons {
-    display: none;
+    visibility: hidden;
 }
 
 @keyframes next1 {
@@ -416,6 +417,15 @@ span.user {
     height: 3vw;
     margin-left: 1.5vw;
     margin-right: 1.5vw;
+    transition: 0.3s ease;
+}
+
+.circle1:hover,
+.circle2:hover,
+.circle3:hover,
+.circle4:hover {
+    background: #fff;
+    color: #F45725;
 }
 
 hr {
@@ -438,7 +448,7 @@ hr {
 
 .sign-in {
     background: #151515;
-    filter: opacity(0.9);
+    filter: opacity(0.97);
     position: absolute;
     display: flex;
     align-items: center;
@@ -529,7 +539,7 @@ hr {
     margin-left: 13vw;
 }
 
-.sign-in-content form button[type=submit] {
+.sign-in-content span.submit {
     background: #fff;
     color: #000;
     width: 19vw;
@@ -542,6 +552,7 @@ hr {
     border-radius: 0.56vw;
     font-weight: 700;
     font-size: 1vw;
+    z-index: 1;
 }
 
 .sign-in-content .social_login {
@@ -622,7 +633,7 @@ hr {
 /* CSS for Mobile devices */
 
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 461px) {
     nav {
         height: 10vw;
     }
@@ -702,10 +713,8 @@ hr {
     .circle9 {
         width: 3vw;
         height: 3vw;
-        bottom: 0vw;
-    }
-
-    .circle5 {
+        margin-top: -110vw;
+        z-index: 1;
         left: 8vw;
     }
 
@@ -776,7 +785,7 @@ hr {
         margin-left: 46%;
     }
 
-    .sign-in form button[type=submit] {
+    .sign-in-content span.submit {
         width: 40vw;
         height: 5vw;
         font-size: 2vw;
@@ -917,8 +926,14 @@ hr {
 
 
 
+@media only screen and (min-width: 461px) and (max-width: 980px) {
+    .home {
+        height: 100vh;
+    }
+}
 
-/* CSS for Tablets */
+
+
 
 @media only screen and (min-width: 980px) and (max-width: 1300px) {
     * {
@@ -965,6 +980,94 @@ hr {
         font-size: 2.5vw;
     }
 
+    .sign-in {
+        width: 70vw;
+        height: 90vw;
+    }
+
+    .sign-in i {
+        font-size: 6vw;
+    }
+
+    .sign-in-content .heading_txt {
+        font-size: 3vw;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .sign-in form input {
+        height: 5vw;
+        width: 40vw;
+        padding: auto;
+        padding-bottom: 0vw;
+        font-size: 2vw;
+        border-radius: 1.5vw;
+        margin-top: -10vw;
+        color: #000;
+        font-weight: 900;
+    }
+
+    .sign-in form .username {
+        margin-top: -20vw;
+    }
+
+    .sign-in form p {
+        margin-top: 0vw;
+        font-size: 1.5vw;
+        margin-left: 46%;
+    }
+
+    .sign-in form button[type=submit] {
+        width: 40vw;
+        height: 5vw;
+        font-size: 2vw;
+        border-radius: 1.5vw;
+    }
+
+    .sign-in-content .social_login {
+        margin-top: 30vw;
+    }
+
+    .social_login p {
+        font-size: 2vw;
+    }
+
+    .txt::before {
+        width: 10vw;
+        top: 1.3vw;
+        left: -11vw;
+    }
+
+    .txt::after {
+        width: 10vw;
+        top: 1.3vw;
+        right: -11vw;
+    }
+
+    .logos {
+        margin-top: 7vw;
+        gap: 5vw;
+    }
+
+    .logos .icon {
+        width: 10vw;
+        height: 5vw;
+    }
+
+    .logos .icon img {
+        width: 3vw;
+        height: 3vw;
+    }
+}
+
+
+
+
+/* CSS for Tablets */
+
+@media only screen and (min-width: 980px) and (max-width: 1300px) {
     .home {
         max-height: 50%;
     }
